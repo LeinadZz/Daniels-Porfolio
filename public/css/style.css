@@ -7,36 +7,42 @@
     background-position: center;
     background-size: cover;
     position: relative;
-    } 
-    nav {
+} 
+
+nav {
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-    }
-    nav img {
+}
+
+nav img {
     width: 200px;
     float: left;
     position: absolute;
     right: 90%;
     bottom: 85%;
-    }
-    .nav-links{
+}
+
+.nav-links{
     flex: 1;
     text-align: right;
-    }
-    .nav-links ul li {
+}
+
+.nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
-    }
-    .nav-links ul li a {
+}
+
+.nav-links ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 17px;
-    }
-    .nav-links ul li::after {
+}
+
+.nav-links ul li::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -44,7 +50,48 @@
     display: block;
     margin: auto;
     transition: 0.5s;
-    }
-    .nav-links ul li:hover::after {
+}
+
+.nav-links ul li:hover::after {
     width:100%;
-    }
+}
+
+.text-box {
+    width:90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1 {
+    font-size: 62px;
+}
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+}
+    
+.resume {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 12px 34px;
+    font-size: 16px;
+    background: #f4ba1c71;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+    
+.resume:hover {
+    border:1px solid #f4bc1c;
+    background: #f4bc1c;
+    text-decoration: none;
+    color: #fff;
+    transition: 1s;
+}
