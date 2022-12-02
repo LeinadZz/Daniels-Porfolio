@@ -175,3 +175,21 @@ nav img {
     bottom: 45%;
     opacity: 1;
 }
+
+.links {
+    font-size: 19px;
+    padding-top: 10px;
+    color: #535353;
+    z-index: 1;
+    text-decoration: none;
+}
+  
+.links::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: ' ';
+    text-decoration: none;
+}
