@@ -337,6 +337,10 @@ nav img {
     text-align: center;
 }
 
+.row {
+    margin-bottom: 100px;
+}
+
 /* CONTACT FORM */
 
 .container {
@@ -400,6 +404,14 @@ form button {
     max-width: 600px;
     border-radius: 15px;
     border: 2px solid #000;
+}
+
+input {
+    border-radius: 10px;
+}
+
+textarea {
+    border-radius: 10px;
 }
 
 .quick-id h3 {
