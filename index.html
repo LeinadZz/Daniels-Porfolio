@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="/public/css/style.css"/>
+    <link rel="stylesheet" href="/assets/css/style.css"/>
 </head>
 <body>
     <!-- HOMEPAGE -->
@@ -46,7 +46,7 @@
     <section id="about">
         <hr>
         <div class="portrait">
-            <img src="/public/images/IMG_9123.jpg">
+            <img src="/assets/images/IMG_9123.jpg">
         </div>
         <div class="underlay">
             <div class="body">
@@ -88,7 +88,7 @@
     
         <div class="row">
             <div class="project-col">
-                <img src="/public/images/project1.png" alt="Project 1">
+                <img src="/assets/images/project1.png" alt="Project 1">
                 <div class="layer">
                     <h3>Bottom's Up</h3>
                     <p>An app designed to help people search for breweries by their postal code. The user can use it to search for breweries and seek Google User rating information for each brewery searched.</p>
@@ -96,7 +96,7 @@
                 </div>
             </div>
             <div class="project-col">
-                <img src="/public/images/project2.png" alt="Project 2">
+                <img src="/assets/images/project2.png" alt="Project 2">
                 <div class="layer">
                     <h3>Dinner Spinner</h3>
                     <p>A food-focused online social networking service. The user can use the app to share recipes as well as view recipes from other Dinner Spinner users.</p>
@@ -104,7 +104,7 @@
                 </div>
             </div>
             <div class="project-col">
-                <img src="/public/images/coming-soon.jpg" alt="Project 3">
+                <img src="/assets/images/coming-soon.jpg" alt="Project 3">
                 <div class="layer">
                     <h3>Coming Soon</h3>
                 </div>
@@ -113,8 +113,36 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section>
-        
+    <section id="contact">
+        <div class="container">
+            <div class="quick-id">
+                <h3>QUICK ID</h3>
+                <ul>
+                    <li class="myName">Daniel Gutierrez</li>
+                    <ol class="myOccupation">Full Stack Web Developer</ol>
+                    <li class="myPhone">Phone Number:</li>
+                    <ol class="myNumber">707-308-9717</ol>
+                    <li class="myEmail">Email:</li>
+                    <ol class="myAddress">daniel.gutierrezwd@gmail.com</ol>
+                </ul>
+                <p class="brief">If you would like to get in contact with me, Please feel free to send me an email or send me a text !</p>
+                <hr>
+                <div class="media">
+                    <ul>
+                        <a href="https://www.linkedin.com/in/daniel-gutierrez-403090246/" target="_blank" class="social-media-2" type="button"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/LeinadZz" target="_blank" class="social-media-2" type="button"><i class="fa-brands fa-github"></i></a>
+                    </ul>
+                </div>
+            </div>
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <h3>CONTACT ME</h3>
+                    <input type="text" id="name" placeholder="Your name" required>
+                    <input type="email" id="email" placeholder="Your email" required>
+                    <input type="text" id="phone" placeholder="Phone Number" required>
+                    <textarea id="message" rows="4" placeholder="Send me a message !"></textarea>
+                    <button type="submit" disabled>Send</button>
+                </form>
+        </div>
     </section>
     
     <footer>
@@ -122,4 +150,6 @@
     </footer>
 </body>
     <script src="https://kit.fontawesome.com/05f9df7f95.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/assets/js/index.js"></script>
 </html>
