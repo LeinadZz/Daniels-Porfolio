@@ -18,14 +18,15 @@
         <nav>
           <a href="index.html"></a>
           <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" id="close-btn"></i>
             <ul>
-                <li><a href="index.html">HOME</a></li>
                 <li><a href="#about">ABOUT ME</a></li>
                 <li><a href="#project">MY WORK</a></li>
                 <li><a href="#contact">CONTACT ME</a></li>
                 <li class="resume"><a href="https://docs.google.com/document/d/1Vp_d6lS4xO-D9dHYs7edheAnbejaTK73N91xkllh6nY/edit?usp=sharing" target="_blank">RESUME</a></li>
             </ul>
           </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         <div class="text-box">
             <h1>Hello, My name is Daniel Gutierrez !</h1>
@@ -59,7 +60,7 @@
                     </ul>
                 </div>
             </div>
-        <div class="about-me">
+        <div class="about-me" id="full">
             <p>I am a dedicated Full Stack Web Development student currently studying at a University of California, Berkely Bootcamp to earn a certificate in Full Stack Web Development. Where I am learning skills such as HTML, CSS, JavaScript, responsive web design and more.
                 <br>
                 <br>
@@ -77,6 +78,12 @@
                 <br>
                 I’m excited to leverage my skills as part of a fast-paced, quality-driven team. Let’s connect!</p>
         </div>
+        <div class="about-me" id="small">
+            <p>I am a dedicated Full Stack Web Development student currently studying at a University of California, Berkely Bootcamp to earn a certificate in Full Stack Web Development. Where I am learning skills such as HTML, CSS, JavaScript, responsive web design and more.
+                <br>
+                <br>
+                As an innovative problem-solver passionate about furthering my knowledge, my current focus is on expanding my skillset and putting them to practice.
+        </div>
         </div>
     </section>
 
@@ -84,14 +91,14 @@
     <section class="project" id="project">
         <hr>
         <h1>My Projects</h1>
-        <p class="project-desc">Here are some of my projects I've recently worked on.</p>
+        <p class="desc">Here are some of my projects I've recently worked on.</p>
     
         <div class="row">
             <div class="project-col">
                 <img src="/assets/images/project1.png" alt="Project 1">
                 <div class="layer">
                     <h3>Bottom's Up</h3>
-                    <p>An app designed to help people search for breweries by their postal code. The user can use it to search for breweries and seek Google User rating information for each brewery searched.</p>
+                    <p class="project-desc">An app designed to help people search for breweries by their postal code. The user can use it to search for breweries and seek Google User rating information for each brewery searched.</p>
                     <a href="https://leinadzz.github.io/Bottoms-Up-API/" target="_blank" class="links"></a>
                 </div>
             </div>
@@ -99,7 +106,7 @@
                 <img src="/assets/images/project2.png" alt="Project 2">
                 <div class="layer">
                     <h3>Dinner Spinner</h3>
-                    <p>A food-focused online social networking service. The user can use the app to share recipes as well as view recipes from other Dinner Spinner users.</p>
+                    <p class="project-desc">A food-focused online social networking service. The user can use the app to share recipes as well as view recipes from other Dinner Spinner users.</p>
                     <a href="https://dinner-spinnerrr.herokuapp.com/" target="_blank" class="links"></a>
                 </div>
             </div>
@@ -145,8 +152,13 @@
         </div>
     </section>
     
-    <footer>
-
+    <footer class="footer-body">
+        <div class="footer-content">
+            <h3>Daniel's Portfolio</h3>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2022 Daniel's Portfolio. Desgined by Daniel Gutierrez</p>
+        </div>
     </footer>
 </body>
     <script src="https://kit.fontawesome.com/05f9df7f95.js" crossorigin="anonymous"></script>

@@ -1,3 +1,13 @@
+const navLinks = document.getElementById("navLinks");
+
+function showMenu() {
+    navLinks.style.right = "0"
+}
+
+function hideMenu() {
+    navLinks.style.right = "-200px"
+}
+
 function sendEmail() {
     Email.send({
         SecureToken : "0a4a0cf3-dc34-4126-a51b-e35760dc0fbb",
