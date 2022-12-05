@@ -17,6 +17,10 @@ html{
     position: relative;
 } 
 
+nav .fa {
+    display: none;
+}
+
 nav {
     display: flex;
     padding: 2% 6%;
